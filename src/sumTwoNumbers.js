@@ -5,5 +5,8 @@
  * @returns {number}
  */
 module.exports.sumTwoNumbers = function sumTwoNumbers(firstNumber, secondNumber) {
-  throw new Error('Not implemented');
+  let firstNum = Number(String(firstNumber).replace(/\s+/g, '').replace('--', '-')); //преобразовала в стрингу(и потом в число), убрала пробелы, и -- заменила на -
+  let secondNum = Number(String(secondNumber).replace(/\s+/g, '').replace('--', '-'));
+  let result = firstNum + secondNum;
+  return result;
 };
