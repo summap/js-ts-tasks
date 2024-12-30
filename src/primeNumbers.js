@@ -15,5 +15,20 @@ module.exports.primeNumbers = function primeNumbers(highestNumber) {
     }
     return true;
   }
-  return Array.from({ length: highestNumber - 1 }, (_, i) => i + 2).filter(isPrime);
+
+  const primes = [];
+  for (let i = 2; i <= highestNumber; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  return function (from, to) {
+    const result = [];
+    for (let i = 0; i < primes.length; i++) {
+      if (primes[i] >= from && primes[i] <= to) {
+        result.push(primes[i]);
+      }
+    }
+    return result;
+  };
 };
