@@ -4,5 +4,8 @@
  * @returns {function}
  */
 module.exports.formatAddress = function formatAddress() {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return function address(homeAddress) {
+    const attributes = ['street', 'house', 'apartment', 'city', 'postalCode', 'country'];
+    return attributes.map(attr => homeAddress[attr] || '').join(', ');
+  };
 };

@@ -9,5 +9,7 @@
  * @returns {function}
  */
 module.exports.formatAddressWithOrder = function formatAddressWithOrder(order) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return function address(data) {
+    return order.map(attr => data[attr] || '').join(', ');
+  };
 };
