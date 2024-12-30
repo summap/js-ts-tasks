@@ -4,5 +4,9 @@
  * @returns {number}
  */
 module.exports.diffElems = function diffElems(arr) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  let diffElem = new Set();
+  for (let i = 0; i < arr.length; i++) {
+    diffElem.add(arr[i]);
+  }
+  return diffElem.size;
 };
