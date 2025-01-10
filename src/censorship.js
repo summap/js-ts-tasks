@@ -19,7 +19,7 @@ module.exports.censorship = function censorship(forbidden) {
       let word = forbidden[i].replace(/\*/g, '\\*');
       let regEx = new RegExp(word, 'gi');
       str = str.replace(regEx, function (match) {
-        return '*'.repeat(match.length);
+        return '*'.repeat(match.length); //коммент
       });
     }
 
