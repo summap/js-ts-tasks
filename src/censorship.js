@@ -23,6 +23,7 @@ module.exports.censorship = function censorship(forbidden) {
       });
     }
 
+    
     return str;
   };
 };
