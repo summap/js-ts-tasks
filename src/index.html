@@ -4,13 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML CSS Task</title>
-
     <link rel="stylesheet" href="./style.css" />
     <script src="./iphone.js"></script>
   </head>
   <body>
     <iphone-frame>
-      <!-- Your HTML Code here -->
+      <div class="profile">
+        <span class="back-arrow">
+          <img src="images/Back.svg" alt="Back">
+        </span>
+        <div class="user-name">user_name</div>
+        <span class="menu-dots">⋯</span>
+      </div>
+      <div class="profile-details">
+        <div class="avatar">
+          <img src="images/Replace me.svg" alt="Profile Avatar">
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>129</strong>
+            <p>Posts</p>
+          </div>
+          <div class="stat">
+            <strong>3680</strong>
+            <p>Followers</p>
+          </div>
+          <div class="stat">
+            <strong>230</strong>
+            <p>Following</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-info">
+        <div class="profile-name">Name</div>
+        <div class="profile-description">Local business</div>
+        <div class="profile-website">www.website.com</div>
+        <div class="profile-actions">
+          <a href="#" class="action-item">
+            <img src="images/follow.svg" alt="Follow" />
+          </a>
+          <a href="#" class="action-item">
+            <img src="images/Message.svg" alt="Message" />
+          </a>
+          <a href="#" class="action-item">
+            <img src="images/Email.svg" alt="Email" />
+          </a>
+          <a href="#" class="action-item">
+            <img src="images/more.svg" alt="More" />
+          </a>
+        </div>
+        <div class="highlights">
+          <div class="highlight">
+            <img src="images/icon=01.svg" alt="Highlight 1">
+            <div class="highlight-label">Highlight 1</div>
+          </div>
+          <div class="highlight">
+            <img src="images/icon=02.svg" alt="Highlight 2">
+            <div class="highlight-label">Highlight 2</div>
+          </div>
+          <div class="highlight">
+            <img src="images/icon=03.svg" alt="Highlight 3">
+            <div class="highlight-label">Highlight 3</div>
+          </div>
+          <div class="highlight">
+            <img src="images/icon=04.svg" alt="Highlight 4">
+            <div class="highlight-label">Highlight 4</div>
+          </div>
+        </div>
+        <div class="view-switcher">
+          <button class="switcher-button active">
+            <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.02747 25.7333V1.65332H26.1075V25.7333H2.02747Z" stroke="#FAFAFA" stroke-width="2.29333"/>
+              <path d="M10.0542 1.65332L10.0542 26.88" stroke="#FAFAFA" stroke-width="2.29333"/>
+              <path d="M0.881104 17.7067L26.1078 17.7067" stroke="#FAFAFA" stroke-width="2.29333"/>
+              <line x1="18.0801" y1="1.65332" x2="18.0801" y2="26.88" stroke="#FAFAFA" stroke-width="2.29333"/>
+              <line x1="2.02747" y1="9.67999" x2="27.2541" y2="9.67999" stroke="#FAFAFA" stroke-width="2.29333"/>
+            </svg>
+          </button>
+          <button class="switcher-button">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.60205 24.7333V4.66665C1.60205 4.03337 2.11543 3.51999 2.74872 3.51999H10.9936C11.3022 3.51999 11.5977 3.39561 11.8135 3.17498L13.4592 1.49183C13.909 1.03181 14.6492 1.03181 15.099 1.49183L16.7447 3.17498C16.9604 3.39561 17.256 3.51999 17.5646 3.51999H25.6821C26.3153 3.51999 26.8287 4.03337 26.8287 4.66666V24.7333C26.8287 25.3666 26.3153 25.88 25.6821 25.88H2.74872C2.11543 25.88 1.60205 25.3666 1.60205 24.7333Z" stroke="#8E8E8E" stroke-width="2.29333"/>
+              <path d="M6.1886 25.88V25.3067C6.1886 22.1403 8.7555 19.5734 11.9219 19.5734H16.5086C19.675 19.5734 22.2419 22.1403 22.2419 25.3067V25.88" stroke="#8E8E8E" stroke-width="2.29333"/>
+              <circle cx="14.2147" cy="12.1201" r="4.58667" stroke="#8E8E8E" stroke-width="2.29333"/>
+            </svg>
+          </button>
+        </div>        
+        <div class="image-grid">
+          <div class="grid-item"><img src="images/Img-01.svg" alt="Image 1"></div>
+          <div class="grid-item"><img src="images/Img-02.svg" alt="Image 2"></div>
+          <div class="grid-item"><img src="images/Img-03.svg" alt="Image 3"></div>
+          <div class="grid-item"><img src="images/Img-04.svg" alt="Image 4"></div>
+          <div class="grid-item"><img src="images/Img-05.svg" alt="Image 5"></div>
+          <div class="grid-item"><img src="images/Img-06.svg" alt="Image 6"></div>
+        </div>
+      </div>
     </iphone-frame>
   </body>
 </html>
